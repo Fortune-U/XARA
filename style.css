@@ -1,0 +1,503 @@
+* {padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+html{margin: 0;
+padding: 0;
+font-size: 1rem;
+}
+
+.menu{
+    margin-left: 1em;
+}
+.cart{
+    margin-right: 1em;
+}
+
+
+nav .drop-down-menu .list-items ul{
+    display: none;
+    list-style: none;
+    
+}
+.search-bar{
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+    
+}
+
+.btn-search{
+    background-color:#FAC4C4 ;
+    width:25px;
+    border: none;
+
+} 
+#abt-d{
+    border-bottom: 2px solid #0C0C0C;
+}
+.container-abt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #0C0C0C;
+    text-align: center;
+    margin: 2.8em 0 1em 0;
+      
+}
+
+.abt-end{
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #0C0C0C;
+    margin-top: 0.5em;
+    text-align: center;
+}
+.abt-btn{
+    text-align: center;
+    width: 8em;
+    padding: 0.4em 0;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 5%;
+    background-color: #FAC4C4;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;;
+}
+.abt-imgs{
+     min-width: 300px;
+    max-width: 400px; 
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+a{
+    
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+}
+a:hover{
+    border-bottom: 2px solid #FFFFFF;
+
+}
+button{
+    transition-duration: 1s;
+    cursor: pointer;
+    outline: none;
+}
+
+
+input{
+    outline: none;
+}
+
+
+
+
+
+#front-text {
+    text-align: center;
+    font-size: 3em;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.rectn{
+    display: flex;
+
+    justify-content: center;
+    padding: 0;
+    margin-top: 6em;
+}
+/*shop!!!!!*/
+
+.shop-main{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1em 1em;
+    margin: 1em 1em;
+}
+.shop-block{
+    display: block;
+    padding: 0em 0em;
+    background-color: #FDF7F7;
+    margin: 1em 0.5em;
+    border-radius: 3em;
+    width: 18em;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    box-shadow: 0px 4px #d9d9d9;
+    
+}
+.price{
+    text-align: right;
+    color: #0DF377;
+    margin: 0.5em 1em;
+    font-size: 1.5em;
+}
+.shop-block img {
+    width:18em;
+    height: 20em;
+    border-radius: 3em;
+    margin: 0 0;
+}
+.shop-block button{
+    margin: 0.5em 0;
+    width: 10em;
+    border: none;
+    box-shadow: 0px 4px #d9d9d9;
+    font-family: 'Montserrat',sans-serif;
+
+}
+
+
+
+
+/*signup*/
+.signup-container{
+    margin: 5em 0.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.signup .login{
+    text-align: center;
+    background-color: #FAC4C4;
+        font-size: 1em;
+        margin: 1em 4em;
+        padding: 0.4em 0;
+        border: none;
+        border-radius: 0.5em;
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+}
+.signup-container .sign{
+    
+        text-align: center;
+        width: 6em;
+        padding: 0.6em 0;
+        border: none;
+        border-radius: 0.3em;
+        background-color: #FAC4C4;
+        font-size: 1.5em;
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 1em;
+    
+}
+.signup-form{
+    background-color: #FFDBCA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    width: 13em;
+    margin: 0.2em 0.2em;
+
+}
+.signup-form form{
+    margin: 0em 0.4em;
+}
+.signup-form .text-area-email ,.text-area-password{
+    background-color: #FFFFFF;
+    border: none;
+    width: 80%;
+
+}
+
+/*
+/*desktop*/
+@media (min-width:450px){
+      .desktop{
+          
+          
+    
+        background-color:#FFDBCA ;
+        border-bottom: 2px solid #FDFAFA ;
+        margin-left: 0;
+        padding: 0.8em 0.4em;
+        width: 100%;
+        margin-bottom: 2em; 
+      
+        /*color: aquamarine;*/
+        
+    }
+    .sideMenu, .drop-down-menu{
+        display: none;
+    }
+    .desktop-nav-item{
+        flex-direction: column;
+      
+    }
+    li {
+        list-style: none;
+    }
+        ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+
+    }
+    a{
+        text-decoration: none;
+        color:#FCFCFC;
+        font-size: 1.5em;
+        font-family: 'Montserrat', sans-serif; 
+        
+    }
+.text-area {
+    width: 30%;
+    padding: 0 3px;
+    line-height: 25px;
+}
+.shop-main{
+    max-width: 80%;
+    margin: 1em 10em;
+}
+
+
+
+.rectn{
+    transform: scale();
+}
+/*about*/
+
+ .abt-imgs{
+     min-width: 300px;
+    max-width: 400px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 35%;
+    padding: 0;
+    flex-basis: 2;
+} 
+.abt-imgs img{
+    width: 150px;
+}
+.abt-btn{
+    width: 8em;
+    font-size: 1em;
+}
+.main-abt{
+    background-color: #FFFFFF;
+    margin: 20em 0;
+}
+/*!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/*!!!!!!!!!!signup*/
+
+.desktop-signup {
+    margin-right: 50%;
+    margin-top: 10%;
+    transform: scale();
+} 
+ 
+.signup-container{
+    margin-left: 40%;
+    margin-top: -14%;
+}
+
+/*body*/
+body{
+    background-color: dimgray;
+}
+body.home{
+    background-image: url(img/pmv-chamara-dMjkQJs58uo-unsplash.jpg);
+    
+    background-size: 120%;
+    background-position:30% 30%;
+    height: 100vh;
+    
+    
+    background-repeat: no-repeat;
+}
+
+body.about-us{
+    background-image: url(img/amin-rk-e5a8TlCzV10-unsplash.jpg);
+    background-color: #FFFFFF;
+    background-size: 100% ;
+    background-position: 0% 30%;
+    background-repeat: no-repeat;
+    height:600px;
+
+}
+body.shop{
+    background-color: #F0E4E4;
+}
+
+body.signup{
+    background-color: #FFF0E9;
+
+}
+body.signup{
+    background-image: url(img/amy-shamblen-xwM61TPMlYk-unsplash.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+body.explore{
+    background-color: rgba(0, 0,0, 0.7);
+    background-image: url(img/explore-bg.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 14%;
+
+}
+}
+
+/*mobile*/
+
+@media (max-width:449px){
+    nav .desktop-nav-item , .list-items{
+       display: none;
+       
+    }
+a {
+    color: black;
+    text-decoration: none;
+
+}
+ .drop-down-menu{
+     
+     
+     display: flex;
+     justify-content: space-between;
+     margin: 1em 0;
+     margin-bottom: 2em; 
+    
+ }
+.abt-imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1em 0;
+    padding: 1em 0;
+}
+
+
+.menu{
+    cursor: pointer;
+
+}
+.sideMenu{
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: all .2s ease-out;
+    background-color: #FAC4C4;
+
+}
+
+li{
+    list-style: none;
+    padding: 1em 0;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    
+    color: #FFFFFF;
+}
+
+
+.closeBtn{
+     align-self:flex-start ;
+     margin: 5px 10px; 
+    margin: 3px;
+    font-size: 1.5em;
+    color: black;
+    font-family: sans-serif;
+    
+
+}
+.sideMenu > h4 {
+    cursor: pointer;
+}
+
+
+
+                   /*body!!!*/
+      body{
+          background-color: dodgerblue;
+      } 
+body.home{
+    background-image: url(img/pmv-chamara-dMjkQJs58uo-unsplash.jpg);
+    
+    background-size: 500%;
+    background-position:60% 0;
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+}
+
+
+body.about-us{
+    background-image: url(img/amin-rk-e5a8TlCzV10-unsplash.jpg);
+    background-color: #FFFFFF;
+    background-size:100% ;
+
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+body.shop{
+    background-color: #F0E4E4;
+}
+
+
+body.signup{
+    background-color: #FFFFFF;
+
+}
+body.signup{
+    background-image: url(img/amy-shamblen-xwM61TPMlYk-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+body.explore{
+    background-color: rgba(0, 0,0, 0.7);
+    background-image: url(img/explore-bg.gif);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: 48% 0%;
+}
+}
+
+
+
+
+
+
