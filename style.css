@@ -38,23 +38,26 @@ nav .drop-down-menu .list-items ul{
 } 
 #abt-d{
     border-bottom: 2px solid #0C0C0C;
+    margin-bottom: -2em;
+    margin-top: 1em;
+    
 }
 .container-abt{
     display: flex;
     justify-content: center;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     margin-top: 1em;
-    font-size: 1.5em;
+    font-size: 0.875em;
     font-family: 'Montserrat', sans-serif;
     color: #0C0C0C;
-    text-align: center;
+    text-align: left;
     margin: 2.8em 0 1em 0;
       
 }
 
 .abt-end{
-    font-size: 1.5em;
+    font-size: 0.875em;
     font-family: 'Montserrat', sans-serif;
     color: #0C0C0C;
     margin-top: 0.5em;
@@ -68,16 +71,17 @@ nav .drop-down-menu .list-items ul{
     border: none;
     border-radius: 5%;
     background-color: #FAC4C4;
-    font-size: 1.5em;
+    font-size: 0.875em;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;;
 }
 .abt-imgs{
      min-width: 300px;
     max-width: 400px; 
-    font-size: 1.5em;
+    font-size: 0.875em;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    text-align: left;
+    flex-direction: column;
 }
 
 a{
@@ -99,9 +103,45 @@ button{
 input{
     outline: none;
 }
+.new-arrvs-container{
+    
+    margin-top: em;
+    
+    padding-top: 1em;
+    padding-left: 1em;
+}
 
+.new-arrvs{
+    
+    font-size: 1.5em;
+    font-family:'Ubuntu', sans-serif; 
+    color: black;
+    margin-top:2em;
+   animation-iteration-count : infinite ;
+   animation-duration: 2s;
+   transition: ease-in-out;
+   animation-name: new-arrvs;
+}
+@keyframes new-arrvs{
+    0%{
+        color: antiquewhite;
+    }
+    25%{
+        color: aqua;
+    
+    }
+    50%{
+        color: brown;
+    }
 
-
+    75%{
+    
+        color: blue;
+    }
+    100%{
+        color: blueviolet;
+    }
+    }
 
 
 #front-text {
@@ -242,6 +282,48 @@ input{
         /*color: aquamarine;*/
         
     }
+.text-area{
+    width: 40%;
+    line-height: 30px;
+}
+.abt-btn{
+    margin-top: 1em;
+}
+.img1,.img2,.img3{
+    position: relative;
+    left: 100px;
+    margin: 1em 0;
+}
+.img1{
+    left: 239px;
+}
+.img2{
+    left: 243px;
+}
+.img3{
+    left: 128px;
+}
+.abt-par,.abt-par2,.abt-par3{
+    text-align: left;
+    margin: 1em 1em;
+}
+.abt-par{
+    position:relative;
+    left: -102px;
+    top: 140px;
+
+}
+.abt-par2{
+    position: relative;
+    left: -200px;
+    top: 200px;
+}
+
+.abt-par3{
+    position: relative;
+    left: -196px;
+    top: 200px;
+}
     .sideMenu, .drop-down-menu{
         display: none;
     }
@@ -266,11 +348,7 @@ input{
         font-family: 'Montserrat', sans-serif; 
         
     }
-.text-area {
-    width: 30%;
-    padding: 0 3px;
-    line-height: 25px;
-}
+
 .shop-main{
     max-width: 80%;
     margin: 1em 10em;
@@ -291,7 +369,7 @@ input{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 1.5em;
+    font-size: 0.875em;
     font-family: 'Montserrat', sans-serif;
     margin: 0 35%;
     padding: 0;
@@ -374,6 +452,10 @@ body.explore{
 
 /*mobile*/
 
+
+/* ADJUSTMENTS */
+
+
 @media (max-width:449px){
     nav .desktop-nav-item , .list-items{
        display: none;
@@ -384,6 +466,68 @@ a {
     text-decoration: none;
 
 }
+.img-new-containers img {
+    width: 250px;
+}
+.text-area{
+    width: 60%;
+    padding: 0 3px;
+    line-height: 30px;
+}
+.abt-btn{
+    margin-top: 1em;
+}
+.img1,.img2,.img3{
+    position: relative;
+    left: 100px;
+    margin: 1em 0;
+}
+.img1{
+    left: 80px;
+    width: 150px;
+    top: 140px;
+}
+.img2{
+    left: 80px;
+    width: 150px;
+    top: 220px;
+}
+.img3{
+    left: 80px;
+    width: 150px;
+    top: 300px;
+}
+.abt-par,.abt-par2,.abt-par3{
+    text-align: left;
+    margin: 1em 1em;
+}
+.abt-par{
+    position:relative;
+    left: -38px;
+    top: 140px;
+
+}
+.abt-par2{
+    position: relative;
+    left: -52px;
+    top: 200px;
+}
+
+.abt-par3{
+    position: relative;
+    left: -50px;
+    top: 280px;
+}
+.abt-end{
+    position: relative;
+    top: 320px;
+    margin: 0 0.875em;
+}
+#abt-d{
+    margin-bottom:-4em ;
+    margin-top: 12em;
+}
+
  .drop-down-menu{
      
      
@@ -497,6 +641,119 @@ body.explore{
 }
 
 
+@media(max-width:320px){
+    
+    .abt-btn{
+        margin-top: 1em;
+    }
+    .img1,.img2,.img3{
+        position: relative;
+        left: 100px;
+        margin: 1em 0;
+    }
+    .img1{
+        left: 35px;
+        width: 150px;
+        top: 140px;
+    }
+    .img2{
+        left: 35px;
+        width: 150px;
+        top: 220px;
+    }
+    .img3{
+        left: 35px;
+        width: 150px;
+        top: 300px;
+    }
+    .abt-par,.abt-par2,.abt-par3{
+        text-align: left;
+        margin: 1em 0em;
+    }
+    .abt-par{
+        position:relative;
+        left: -18px;
+        top: 140px;
+    
+    }
+    .abt-par2{
+        position: relative;
+        left: -44px;
+        top: 200px;
+    }
+    
+    .abt-par3{
+        position: relative;
+        left: -44px;
+        top: 280px;
+    }
+    .abt-end{
+        position: relative;
+        top: 320px;
+        margin: 0 0.3em;
+    } 
+    #abt-d{
+        margin-bottom: -5em;
+        margin-top: 4em;
+    }
+}
+
+
+
+@media(max-width:280px){
+    .abt-btn{
+        margin-top: 1em;
+    }
+    .img1,.img2,.img3{
+        position: relative;
+        left: 100px;
+        margin: 1em 0;
+    }
+    .img1{
+        left: 30px;
+        width: 150px;
+        top: 140px;
+    }
+    .img2{
+        left: 30px;
+        width: 150px;
+        top: 220px;
+    }
+    .img3{
+        left: 30px;
+        width: 150px;
+        top: 300px;
+    }
+    .abt-par,.abt-par2,.abt-par3{
+        text-align: left;
+        margin: 1em 1em;
+    }
+    .abt-par{
+        position:relative;
+        left: -10px;
+        top: 140px;
+    
+    }
+    .abt-par2{
+        position: relative;
+        left: -40px;
+        top: 200px;
+    }
+    
+    .abt-par3{
+        position: relative;
+        left: -40px;
+        top: 280px;
+    }
+    .abt-end{
+        position: relative;
+        top: 320px;
+        margin: 0 0.875em;
+    } 
+    #abt-d{
+        margin-bottom: -5em;
+    }
+}
 
 
 
