@@ -13,13 +13,83 @@ font-size: 1rem;
 .cart{
     margin-right: 1em;
 }
+.new-disp-animation{
+   margin-left: 1em;
+   padding: 1.2em;
+   margin-bottom: 0;
+}
+.new-text{
+    font-size: 1.5em;
+    border-top: 2px solid #0DF377;
+    border-bottom: 2px solid #0DF377;
+    width: 140px;
+    margin-left: 1em;
+    text-transform: capitalize;
+}
 
+.go-to-btn{
+    margin-top: 0;
+    padding: 1em;
+    margin-left: 3em;
+    background-color: #FAC4C4;
+    font-family: 'Ubuntu' ;
+    border: none;
+    outline: none;
+    margin-bottom: 14em;
+    text-align: center;
+}
+.go-to-btn:hover{
+    transform: scale(1.2);
+    color: #FFFFFF;
+    
+    background-color: #fababa ;
+}
+.new-main-container{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    margin-top: 5em;
+}
+.footer{
+    padding: 0.675em;
+    background-color: #FAC4C4;
+    text-align: center;
+    color: #FFFFFF;
+}
+.footer-login{
+    margin-top: 10em;
+    padding: 0.675em;
+    background-color: #FAC4C4;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.footer-explore{
+    margin-top: 28em;
+    padding: 0.675em;
+    background-color: #FAC4C4;
+    text-align: center;
+    color: #FFFFFF;
+}
 
 nav .drop-down-menu .list-items ul{
     display: none;
     list-style: none;
     
 }
+.shop-img-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.875em;
+}
+.shop-img-header img{
+    width: 55%;
+    height: 350px;
+    align-items: center;
+
+    text-align: center;
+}
+
 .search-bar{
     display: inline;
     display: flex;
@@ -277,7 +347,7 @@ input{
         margin-left: 0;
         padding: 0.8em 0.4em;
         width: 100%;
-        margin-bottom: 2em; 
+        margin-bottom: 0.875em; 
       
         /*color: aquamarine;*/
         
@@ -408,6 +478,7 @@ body{
 }
 body.home{
     background-image: url(img/pmv-chamara-dMjkQJs58uo-unsplash.jpg);
+    background-color: #FFFFFF;
     
     background-size: 120%;
     background-position:30% 30%;
@@ -546,6 +617,12 @@ a {
     margin: 1em 0;
     padding: 1em 0;
 }
+.go-to-btn{
+    margin-bottom: 30em;
+}
+section{
+    margin-bottom: 25em;
+}
 
 
 .menu{
@@ -600,7 +677,7 @@ li{
       } 
 body.home{
     background-image: url(img/pmv-chamara-dMjkQJs58uo-unsplash.jpg);
-    
+    background-color: #FFFFFF;
     background-size: 500%;
     background-position:60% 0;
     height: 100vh;
@@ -695,6 +772,9 @@ body.explore{
     #abt-d{
         margin-bottom: -5em;
         margin-top: 4em;
+    }
+    .go-to-btn{
+        margin-bottom: 30em;
     }
 }
 
